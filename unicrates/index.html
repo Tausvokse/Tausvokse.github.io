@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Animated Minecraft crates for Fabric and NeoForge. Four free Lite tiers, or UniCrates Pro for custom content, editors and SQL storage."
+    />
+    <meta name="theme-color" content="#141415" />
+    <meta
+      property="og:title"
+      content="UniCrates — your rewards, your opening"
+    />
+    <meta
+      property="og:description"
+      content="Four free crate tiers. Configurable rewards. Two installation modes for Fabric and NeoForge."
+    />
+    <meta
+      property="og:image"
+      content="https://taushop.me/unicrates/assets/legendary-crate.webp"
+    />
+    <link rel="icon" type="image/png" href="assets/icon.png" />
+    <link rel="stylesheet" href="site.css" />
+    <link rel="canonical" href="https://taushop.me/unicrates/" />
+    <title>UniCrates — animated crates for your Minecraft server</title>
+    <script type="module" src="purchases.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="navigation wrap">
+      <a class="brand" href="./"
+        ><img src="assets/icon.png" width="40" height="40" alt="" />UniCrates</a
+      >
+      <nav aria-label="Main">
+        <a href="#editions">Editions</a
+        ><a href="https://taushop.me/mods-wiki/unicrates/">Documentation</a
+        ><a href="support/">Support</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="context">Minecraft 1.21.1 · Fabric &amp; NeoForge</p>
+          <h1 id="hero-title">Your rewards.<br />Your opening.</h1>
+          <p class="lead">
+            Give your players a crate worth opening. Choose a tier, set the
+            rewards and hand out its matching key.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="#lite">Start with free Lite</a
+            ><a class="button secondary" href="#pro">Explore Pro — $40</a>
+          </div>
+          <p class="small">Java 21 · server only or server + client</p>
+        </div>
+        <figure class="hero-visual">
+          <img
+            src="assets/legendary-crate.webp"
+            width="1920"
+            height="1080"
+            fetchpriority="high"
+            alt="A single gold Legendary crate in a stone courtyard"
+          />
+          <figcaption>
+            UniCrates Lite, recorded in Minecraft with shaders
+          </figcaption>
+        </figure>
+      </section>
+      <section class="wrap section" id="lite" aria-labelledby="lite-title">
+        <div class="section-heading">
+          <div>
+            <p class="context">UniCrates Lite · free</p>
+            <h2 id="lite-title">Four tiers. Your reward pools.</h2>
+          </div>
+          <p>
+            Common, Rare, Epic and Legendary, with matching physical keys and
+            their own opening timelines. Edit names, rewards and weights in
+            JSON. No license or activation service required.
+          </p>
+        </div>
+        <div class="gallery">
+          <figure>
+            <img
+              src="assets/common-crate.webp"
+              width="1920"
+              height="1080"
+              loading="lazy"
+              alt="Common Lite crate with metal bands"
+            />
+            <figcaption>Common</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="assets/rare-crate.webp"
+              width="1920"
+              height="1080"
+              loading="lazy"
+              alt="Rare Lite crate with gold-toned fittings"
+            />
+            <figcaption>Rare</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="assets/epic-crate.webp"
+              width="1920"
+              height="1080"
+              loading="lazy"
+              alt="Epic Lite crate with purple crystal details"
+            />
+            <figcaption>Epic</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="assets/legendary-crate.webp"
+              width="1920"
+              height="1080"
+              loading="lazy"
+              alt="Legendary Lite crate with gold fittings"
+            />
+            <figcaption>Legendary</figcaption>
+          </figure>
+        </div>
+        <p>
+          Lite supports item, command, experience and broadcast rewards, reward
+          previews and JSON player storage. Cobblemon is not required. New
+          default crates work for ordinary players without OP.
+        </p>
+        <div class="actions">
+          <a
+            class="button primary"
+            id="lite-download"
+            href="https://taushop.me/mods-wiki/unicrates/getting-started/"
+            >Set up Lite</a
+          ><a
+            class="button secondary"
+            href="https://taushop.me/mods-wiki/unicrates/lite-gallery"
+            >Watch the four openings</a
+          >
+        </div>
+        <p class="small" id="lite-status">
+          CurseForge submission is being prepared. A public download link will
+          appear here after approval.
+        </p>
+      </section>
+      <section
+        class="wrap section"
+        id="editions"
+        aria-labelledby="editions-title"
+      >
+        <div class="section-heading">
+          <h2 id="editions-title">Choose what your server needs</h2>
+          <p>
+            Lite is a complete free edition. Pro is a separate paid edition for
+            server owners who need more control.
+          </p>
+        </div>
+        <div class="table-scroll">
+          <table>
+            <caption class="visually-hidden">
+              UniCrates Lite and Pro features
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Feature</th>
+                <th scope="col">Lite</th>
+                <th scope="col">Pro</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Crates and models</th>
+                <td>Four built-in tier families</td>
+                <td>Additional built-in families and custom models</td>
+              </tr>
+              <tr>
+                <th scope="row">Openings</th>
+                <td>Four bundled tier timelines</td>
+                <td>Custom timelines and additional opening systems</td>
+              </tr>
+              <tr>
+                <th scope="row">Rewards</th>
+                <td>Items, commands, XP and broadcasts</td>
+                <td>
+                  Additional reward types and optional integrations, including
+                  Cobblemon
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Configuration</th>
+                <td>JSON files</td>
+                <td>JSON, browser editor and in-game editor</td>
+              </tr>
+              <tr>
+                <th scope="row">Player storage</th>
+                <td>JSON files</td>
+                <td>JSON, SQLite or MySQL/MariaDB</td>
+              </tr>
+              <tr>
+                <th scope="row">License</th>
+                <td>Free; no activation</td>
+                <td>$40 once; one active server; online activation</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small">
+          Optional integrations require compatible dependencies. Pro features
+          also depend on the installation mode and client capabilities; check
+          the installation guide before buying.
+        </p>
+      </section>
+      <section class="wrap section" aria-labelledby="install-title">
+        <h2 id="install-title">Two ways to install</h2>
+        <div class="installation">
+          <article>
+            <h3>Server + client</h3>
+            <p>
+              Lite uses the same matching loader JAR on the server and every
+              client. Pro uses separate server and client companion JARs.
+            </p>
+          </article>
+          <article>
+            <h3>Server only</h3>
+            <p>
+              Install the server-only JAR on the server. Players need no
+              UniCrates client mod, but must accept your hosted, required
+              resource pack. Other modpack dependencies still apply.
+            </p>
+          </article>
+        </div>
+        <p>
+          Choose Fabric or NeoForge, then one installation mode. Fabric also
+          requires Fabric API. Do not combine alternative server JARs. Back up
+          existing worlds before changing modes.
+        </p>
+        <a href="https://taushop.me/mods-wiki/unicrates/getting-started/"
+          >Read the installation guide</a
+        >
+      </section>
+      <section
+        class="wrap section purchase"
+        id="pro"
+        aria-labelledby="pro-title"
+      >
+        <div>
+          <p class="context">UniCrates Pro 3.x</p>
+          <h2 id="pro-title">More room to build your own</h2>
+          <p class="lead">
+            Custom models and openings, browser configuration, additional
+            integrations and SQL storage for your server.
+          </p>
+          <p>
+            Pro is licensed server software. It does not sell players crate
+            keys, random rewards or gameplay advantages.
+          </p>
+          <a href="https://taushop.me/mods-wiki/unicrates/editions"
+            >Read the edition and activation details</a
+          >
+        </div>
+        <div class="purchase-details">
+          <p class="price">US$40 <span>one-time</span></p>
+          <ul>
+            <li>One simultaneously active server installation</li>
+            <li>Fabric and NeoForge Pro builds for Minecraft 1.21.1</li>
+            <li>Updates within the 3.x release line</li>
+            <li>Online activation at every server startup</li>
+            <li>Custom animation services are not included</li>
+          </ul>
+          <button class="button primary" id="buy-pro" type="button" disabled>
+            Checkout is being prepared
+          </button>
+          <p id="checkout-status" class="small" role="status">
+            Payments are not open while store verification is in progress.
+          </p>
+          <p class="small">
+            Tax is included where applicable. Paddle shows the final charge
+            before payment. Read the <a href="terms/">terms</a>,
+            <a href="refunds/">refund policy</a> and
+            <a href="privacy/">privacy notice</a>.
+          </p>
+          <p class="small" id="order-status" role="status"></p>
+          <div id="order-downloads"></div>
+        </div>
+      </section>
+      <section class="wrap section" aria-labelledby="questions-title">
+        <h2 id="questions-title">Before you install</h2>
+        <details>
+          <summary>Does Lite need a Pro license?</summary>
+          <p>
+            No. Lite runs independently without a license or activation service.
+          </p>
+        </details>
+        <details>
+          <summary>Can I move a Pro license to another host?</summary>
+          <p>
+            One server can be active at a time. Stop the previous installation
+            and contact support to release its activation before moving hosts or
+            changing the outgoing IP.
+          </p>
+        </details>
+        <details>
+          <summary>What happens if activation is unavailable?</summary>
+          <p>
+            Every new server process needs online approval. A running process
+            can use its existing signed permit until expiry, at most two
+            minutes. Without a valid permit, Pro falls back to Lite limits. This
+            purchase is not a promise that an online service will exist
+            indefinitely.
+          </p>
+        </details>
+        <details>
+          <summary>Are custom animations included?</summary>
+          <p>
+            No. New Pro purchases do not include an individual animation
+            service. Earlier written purchase agreements remain valid.
+          </p>
+        </details>
+      </section>
+    </main>
+    <footer class="wrap">
+      <div>
+        <span class="brand">UniCrates by Tausvokse</span>
+        <p class="small">
+          Independent Minecraft software. Not affiliated with or endorsed by
+          Mojang Studios or Microsoft.
+        </p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="terms/">Terms</a><a href="refunds/">Refunds</a
+        ><a href="privacy/">Privacy</a><a href="support/">Support</a
+        ><a href="https://taushop.me/mods-wiki/">Other mods</a>
+      </nav>
+    </footer>
+  </body>
+</html>
